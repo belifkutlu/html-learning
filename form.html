@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="" method="get" id="form1" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Kullanıcı Bilgileri</legend>
+        <label for="kadi"> Kullanıcı Adı</label>
+        <input id="kadi" placeholder="Kullanıcı adınızı yazınız" maxlength="6" required type="text"> <br>
+        <input id="kadi" disabled type="text" value="Elif"> <br>
+        <input id="kadi" readonly type="text" value="Elif2"> <br>
+        <input  id="kadi" required type="text"> <br>
+
+        <label  for="sifre"> Şifre</label>
+        <input type="password" name="" required id="sifre" placeholder="Şifrenizi yazınız"> <br>
+        <label for="eposta" aria-placeholder="E-posta adresinizi yazınız" > E-posta </label>
+        <input type="email" required id="eposta"> <br>
+        <button type="submit" >Giriş Yap</button>
+    </fieldset>
+        <input type="number" required value="5" min="5" max="15" >
+        <input type="url" required >
+       
+        <label for="dosya"> Dosya seç</label>
+        <input type="file" accept="image/*" name="dosya" multiple id="dosya"> <br>
+        <label>
+        <input required type="checkbox" name="" id=""> Üyelik sözleşmesini kabul ediyorum
+    </label> <br>
+    <input  type="checkbox" checked name="" id=""> Uzaktan satış sözleşmesini kabul ediyorum
+    </label> <br>
+    <label>
+        <input name="gender" type="radio" value="man"> Erkek
+        <input name="gender" type="radio" checked value="women"> Kadın <br>
+
+        <input name="color" type="radio" required value="red"> Kırmızı
+        <input name="color" type="radio" required value="blue"> Mavi
+
+    </label> <br>
+    <input type="hidden" name="test" value="test">
+    <input type="submit" formaction="a.html" value="Gönder">
+    <input type="submit" formmethod="post" value="Gönder 2">
+    <input type="submit" formtarget="_blank" value="Gönder 3">
+
+    <input type="reset" value="Sıfırla">
+    </form>
+
+    <br><br><br>
+    Renk seç
+    <input type="color" > <br>
+    <input type="date" > <br>
+    <input type="datetime-local" > <br>
+    <input type="email" > <br>
+    <input type="month" > <br>
+    <input type="week"> <br>
+    <input type="number" min="5" max="15" > <br>
+    <input type="range" min="0" max="20" step="5"> <br>
+    <input type="search" autofocus > <br>
+    <input type="tel" > <br>
+    <input type="time" > <br>
+    <input type="url" > <br>
+
+    <input type="text" name="kadi" autocomplete="off" > <br><br>
+    <input list="diller" name="diller" form="form1">
+    <datalist id="diller" >
+        <option value="html">
+        <option value="CSS">
+        <option value="JavaScript">
+            
+    </datalist> <br><br>
+
+    <select multiple size="7" name="Dil[]">
+        <optgroup label="Front-end Dilleri">
+        <option value="css"> css</option>
+        <option selected value="css"> html</option>
+        <option value="css"> JS</option>
+    </optgroup>
+    <optgroup label="Back-end Dilleri">
+        <option value="css"> PHP</option>
+        <option selected value="css"> JS</option>
+        <option value="css"> PYTHON</option>
+    </optgroup>
+
+    </select> <br><br>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button type="submit"></button>
+
+</body>
+</html>
